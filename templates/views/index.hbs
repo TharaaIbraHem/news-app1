@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Hbs home page
+        </title>
+        
+        <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+        <link rel='stylesheet' type='text/css' href='css/bootstrap.css'>
+
+    </head>
+    <body>
+          {{>header}}
+
+        {{#each articles}}
+       {{print_article}}
+            
+             
+     <div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">news</h5>
+    <p class="card-text">{{articles}}</p>
+    
+  </div>
+</div> 
+
+
+
+       {{/each}}
+
+
+        {{>footer}} 
+        <script src='js/app.js'></script>
+    </body>
+</html>
